@@ -20,6 +20,8 @@
             background-color: white; /* White background */
             padding: 20px; /* Adds space inside the box around the text */
             margin: 20px; /* Adds space outside the box */
+            padding-top: 10px; /*CHANGE*/
+            border-radius: 20px;
             /*border: 1px solid #ccc;  Optional: adds a border around the box */
             /* Additional styling like width, border-radius, etc., can be added as per your design */
         }
@@ -45,6 +47,14 @@
             border: 1px solid #ccc;
             border-radius: 4px;
         }
+        #devFootnote {
+        position: fixed;
+        bottom: 10px;    /* Distance from the bottom */
+        right: 10px;     /* Distance from the right */
+        font-size: 12px; /* Adjust font size as needed */
+        color: #666;     /* Text color */
+        /* Additional styling (e.g., background, padding) as needed */
+    }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -59,13 +69,17 @@
                     <!-- This is a comment in HTML -->
                     <!-- <br> -->
                     <p>we're glad to have you.</p>
-                    <label for="myTextbox">what are you grateful for today?&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                    <input type="text" id="myTextbox" name="myTextbox" placeholder="make yourself a little happier...">
+                    <!-- <label for="myTextbox">what are you grateful for today?&nbsp;&nbsp;&nbsp;&nbsp;</label>-->
+                    <input type="text" id="myTextbox" name="myTextbox" placeholder="what are you grateful for today?">
                     <br>
                     <a href="#" id="exportLink">Export to CSV</a>
                 </div>
             </div>
         </div>
+    </div>
+
+    <div id="devFootnote">
+        developed with love by riva jain. © 2024. all rights reserved.
     </div>
 
     <!-- Add more HTML elements here as needed -->

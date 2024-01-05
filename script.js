@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
     // Function to convert array to CSV
-    function arrayToCSV(objArray) {
+    function arrayToCSV2(objArray) {
         const array = typeof objArray !== 'object' ? JSON.parse(objArray) : objArray;
         const lineArray = [];
         for (const index in array) {
@@ -27,6 +27,28 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         return lineArray.join('\r\n');
     }
+
+    function arrayToCSV(objArray) {
+        // Ensure objArray is an array, parse if it's a string
+        const array = typeof objArray !== 'object' ? JSON.parse(objArray) : objArray;
+        const csvLines = [];
+    
+        // Iterate over the array
+        for (const item of array) {
+            if (typeof item === 'string') {
+                // Escape double quotes and wrap in double quotes
+                csvLines.push('"' + item.replace(/"/g, '""') + '"');
+            } else {
+                // If item is not a string, just add it
+                csvLines.push(item);
+            }
+        }
+    
+        // Join all CSV lines by newline character
+        return csvLines.join('\r\n');
+        //return csvLines.join(',');
+    }
+    
 
     // Function to export to CSV
     exportLink.addEventListener('click', function (e) {
