@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌻</title>
+    <link rel="icon" type="image/png" href="/moon.png">
+    <style>
+        .centered-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /*padding: 50px;*/
+            height: 90vh; /* Full viewport height */
+        }
+        .above-center {
+            margin-top: -50px; /* Adjust this value to control the shift */
+        }
+        .center-box {
+            background-color: white; /* White background */
+            padding: 20px; /* Adds space inside the box around the text */
+            margin: 20px; /* Adds space outside the box */
+            /*border: 1px solid #ccc;  Optional: adds a border around the box */
+            /* Additional styling like width, border-radius, etc., can be added as per your design */
+        }
+        body {
+            background-image: url('new_gal_back.png'); /* Replace with the path to your image */
+            background-size: cover;  /*This ensures the image covers the whole page */
+            /*background-size: 1000px 500px;*/
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+            
+            font-family: 'Sora', sans-serif;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-weight: 700; /* This is for bold style */
+        }
+        input[type="text"] {
+            font-family: 'Sora', sans-serif;
+            width: 230px;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="centered-content">
+        <div class="above-center">
+            <div class="center-box">
+                <div>
+                    <h1>welcome, riva.</h1>
+                    <!-- This is a comment in HTML -->
+                    <!-- <br> -->
+                    <p>we're glad to have you.</p>
+                    <label for="myTextbox">what are you grateful for today?&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="text" id="myTextbox" name="myTextbox" placeholder="make yourself a little happier...">
+                    <br>
+                    <a href="#" id="exportLink">Export to CSV</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add more HTML elements here as needed -->
+    <!-- // You can add JavaScript here for dynamic content or interactions-->
+    <script src="script.js"></script>
+
+</body>
+</html>
