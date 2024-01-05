@@ -40,6 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
             action: "downloadCSV",
             csvContent: csvContent
         }, function(response) {
+            //console.log('download requested');
             if (chrome.runtime.lastError) {
                 // Handle error or log it
                 console.error("Error details:", chrome.runtime.lastError.message);
@@ -48,21 +49,6 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
 
-        
 
-       /*  let blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
-        let url = URL.createObjectURL(blob);
-
-        //this.setAttribute('download', 'textEntries.csv');
-        //this.click();
-        chrome.downloads.download({
-            url: url, // URL of the file to be downloaded
-            filename: 'downloaded_file.txt',   // Suggested filename for the download
-            conflictAction: 'uniquify',        // Action to take if filename conflicts
-            saveAs: true                       // Whether to show a Save As dialog
-          }, function(downloadId) {
-            console.log('Download started with ID: ', downloadId);
-            URL.revokeObjectURL(url); // Clean up the URL object
-          }) */
     });
 });

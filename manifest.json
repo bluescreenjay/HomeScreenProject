@@ -1,5 +1,5 @@
 {
-    "manifest_version": 2,
+    "manifest_version": 2, 
     "name": "Home Screen Project",
     "description": "aesthetic home screen and gratitude journal",
     "version": "1.0",
